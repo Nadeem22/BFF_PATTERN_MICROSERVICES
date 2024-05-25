@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: bff-service
+server:
+  port: 8081
+
+course-service:
+  url: http://localhost:8082
+author-service:
+  url: http://localhost:8083
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
