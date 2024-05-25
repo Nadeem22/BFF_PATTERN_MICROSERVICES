@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "ba883fca-fbf8-418c-9097-e11485674d98",
+		"name": "BFF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5574900"
+	},
+	"item": [
+		{
+			"name": "Get-Author-By-Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/author/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"author",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Course-By-Author-Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/course/author/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"course",
+						"author",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BFF-RQUEST-TO-GET-THE-COURSE-BASED-ON-AUTHOR-ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/bff/authors/2/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bff",
+						"authors",
+						"2",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
